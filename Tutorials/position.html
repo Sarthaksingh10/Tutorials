@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        height: 10000px;
+    }
+   .box{
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    display: inline-block
+   }
+   #box3{
+   /*  relative means relative to its normal positoin */
+  /*   position:relative;
+    top: 40px;
+    left: 50px; */
+
+
+   /*  absolute means relative to the parent element */
+   /*  position:absolute;
+    top: 140px;
+    left: 150px; */
+
+   /*  fixed means it will remain fix w.r.t the browser */
+   /* If we only use FIXED without giving any dimensions from top right left bottom the other blocks will overlap the fixed element */
+   /*  position:fixed;
+    top: 3px; */
+
+    position: sticky;
+    top: 3px;
+   }
+</style>
+<body>
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+</body>
+</html>

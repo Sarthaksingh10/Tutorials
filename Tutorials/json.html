@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON object in js</title>
+</head>
+<body>
+    <h1>JSON object</h1>
+
+    <script>
+        let obj={
+            name:"sarthak",
+            age:19,
+            freind:"Prabhleen"
+        }
+        console.log(obj);
+        let obj1=JSON.stringify(obj);            //This will convert the object to string
+        console.log(obj1)
+
+       let obj2= obj1.replace("19",'20')        //After it is converted into string we can apply all string functions
+       console.log(obj2)
+
+
+       let obj3=JSON.parse(obj2)               //This will convert a string into an object
+       console.log(obj3)     
+    </script>
+</body>
+</html>

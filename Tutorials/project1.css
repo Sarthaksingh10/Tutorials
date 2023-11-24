@@ -1,0 +1,105 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+  background: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+    margin: 2px;
+}
+a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+li{
+    color: green;
+    display: inline-block;
+}
+
+img{
+    left: 30%;
+    position: relative;
+width: 40px;
+border-radius: 50%;  
+  height: 40px;
+}
+.left{
+    height: 100px;
+    display: inline-block;
+    font-size: 30px;
+    position: absolute;
+    top: 14px;
+    left: 34px;
+ }
+.mid{
+    left: 20%;
+    top: 20px;
+    position: absolute;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    }
+.right{
+    display: inline-block;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 34px;
+  }
+    .btn{
+        margin: 2px 2px;
+        padding: 2px 2px;
+        background-color: rgba(0, 0, 0, 0.352);
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        font-size: 30px;
+    }
+    .btn:hover{
+        background-color: grey;
+        cursor: pointer;
+    }
+    .content{
+        font-family: 'Roboto', sans-serif;
+        margin: 3px;
+        height: 300px;
+        position: absolute;
+        top: 230px;
+       border:4px solid black;
+       border-radius: 5px;
+    }
+    h1{
+        color: rgb(53, 198, 75);
+        text-align: center;
+    }
+    .form{
+        text-align: center;
+    }
+    input{
+
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+        margin: 2px;
+    }
+    .submit{
+        margin: 4px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        border-radius: 10px;
+        border: 2px solid white;
+        font-size: 25px;
+       position: relative;
+       top: 5px;
+       left: 40%;
+    }
+    .submit:hover{
+        background-color: grey;
+    }

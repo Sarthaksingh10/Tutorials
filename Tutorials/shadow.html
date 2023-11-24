@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    body{
+        --primary-color:black;   /* This is how we can make custom variables in css */
+        background-color: var(--primary-color);  /*   this is how we call out custom variables */
+        color: white;
+    }
+    div{
+        position: relative;
+        top: 150px;
+    }
+    .practice{
+        border: 2px solid red;
+        text-align: center;
+       justify-content: center;
+        box-shadow: 5px 6px 50px 20px orange;  /* offset-x,offset-y,blur-radius,spread-radius,color */
+    }
+   .practice h1{
+        text-shadow: 4px 3px 1px  red;
+    }
+</style>
+<body>
+    <div class="practice">
+ <h1>This is about shadow</h1>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, impedit?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti voluptatum vel dolores! 
+    Natus fuga quia eum obcaecati, vitae officiis!
+ </p>
+    </div>
+</body>
+</html>

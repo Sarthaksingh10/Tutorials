@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout using grid</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'foot foot foot footer';
+        }
+        .item{
+            border: 4px solid white;
+            background-color: skyblue;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #foot{
+            grid-area: foot;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+          /*   margin: 3px; */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div id="navbar" class="item">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Service</li>
+        </ul>
+      </div>
+    <div id="section" class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius explicabo nulla hic, minus quam qui suscipit aut incidunt similique labore nobis magnam dignissimos expedita at sint eos possimus dolore, ad sapiente natus amet ullam aperiam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint laboriosam expedita quidem temporibus provident culpa similique odio voluptatum praesentium suscipit quibusdam, architecto quae minus beatae deserunt itaque nobis quam neque ducimus natus nostrum tempore aliquam qui? Voluptatibus, doloribus enim.
+    </div>
+    <div id="aside" class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus iusto velit error repellendus dolorem libero et veniam animi natus.</div>
+    <div id="foot" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, neque?</div>
+    <div id="footer" class="item"></div>
+    </div>
+</body>
+</html>

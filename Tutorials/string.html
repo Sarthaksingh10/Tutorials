@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #printing{
+        font: 900;
+        font-size: 45px;
+        justify-content: center;
+        text-align: center;
+        color: red;
+        animation: print 2s;
+    }
+   
+</style>
+<body>
+    <div id="printing">
+    <h1>Hello world</h1>
+    <button onclick="print()">Print more</button>
+    </div>
+    <script>
+        console.log("Hello world");
+        var name="Sarthak";
+        var college="vips";
+        var course="BTECH"
+        var state=`${name} is a ${course} student at ${college}`;  //we can use backtick to write a varibale as function
+        console.log(state);
+        console.log(name.length);  //length of the string
+         
+        function print(){
+        let printing=document.getElementById("printing");
+    document.getElementById("printing").innerHTML="This code is executed by javascript"
+    document.getElementById("printing").style.color="red"
+        }
+
+        var str="this Is a string";
+        var position=str.indexOf("Is");   //This will give index of "is" in the string index always start from 0
+        console.log(position);
+        /* var slicer=str.slice(1,n); */   //will print string from index 1 to n-1
+      /*   var substring=str.substring(1,3); */ //will work same as slice
+      var substr=str.substr(1,5);  //(n,m)will start from index n and will take m more string index after n
+        console.log(substr);
+        var replace=str.replace("string","sarthak");   //this will replace string with sarthak
+        var upper=replace.toUpperCase();   //This will make out string to uppercase
+        console.log(upper);
+
+        let newstr=str.concat("I me sarthak");  //this will add newstring to the str
+        console.log(newstr);
+       var newstr2="     I me        sarthak"
+        var newstr3=newstr2.trim();  //trim will remove whitespaces from begining and end
+        console.log(newstr3);
+    </script>
+</body>
+</html>

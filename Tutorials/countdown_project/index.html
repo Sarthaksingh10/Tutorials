@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <div id="count">
+        <h1><strong>Countdown Timer</strong></h1>
+    </div>
+
+    <div id="inputdate">
+        <h2>The time left to <span id="date"></span> is.</h2>
+    </div>
+    
+    <div id="countdown">
+
+        <div class="box" id="year">
+        <label for="inputyear">
+            <input  type="number"  id="inputyear"  readonly value="0">YEAR</input>
+        </label>
+    </div>
+
+    <div class="box" id="month">
+        <label for="input-month">
+    <input  type="number" id="input-month" readonly value="0">MONTH</input>
+       </label>
+    </div>
+
+    <div class="box" id="day">
+       <label for="inputday">
+        <input type="number"   id="inputday" readonly value="0">DAY</input>
+       </label>
+    </div>
+
+    <div class="box" id="hours">
+       <label for="inputhours">
+        <input type="number"   id="inputhours" readonly value="0">HOURS</input>
+       </label>
+    </div>
+
+    <div class="box" id="minutes">
+       <label for="inputminutes">
+        <input type="number"   id="inputminutes" readonly value="0">MINUTES</input>
+       </label>
+    </div>
+    <div class="box" id="seconds">
+       <label for="inputseconds">
+        <input type="number"   id="inputseconds" readonly value="0">SECONDS</input>
+       </label>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="count.js"></script>
+</body>
+</html>

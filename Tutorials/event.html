@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+</head>
+<body>
+<!--     browser event listeners
+
+    'click'
+    'mouseover/mouseout'
+    'mouseup/mousedown'
+    'context menu'
+    'submit'
+    'focus'
+    'domcontentloaded'
+    'transitiion end' -->
+
+    <div id="container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non nihil atque voluptatum placeat autem velit maiores optio fugiat ullam eaque odit possimus labore rerum molestiae deleniti, ut laudantium provident nisi? Ullam similique tempore eius debitis molestias in saepe dolore nihil nemo eligendi, quas dolorem beatae officia porro expedita iusto id enim ea? Sunt maiores repudiandae corrupti id excepturi numquam, doloremque totam deserunt esse delectus cum recusandae eligendi dolore? Aut nulla id quisquam a corrupti voluptates qui ipsa molestiae provident voluptatum! Consequatur reiciendis accusamus expedita nobis corporis praesentium. Ipsum cupiditate doloremque architecto, adipisci debitis minus soluta accusantium, vero beatae hic aliquid excepturi molestiae vel odio. Fugiat, quos eaque totam, iure eum aliquid earum repudiandae quia animi laborum optio velit veniam eos dignissimos aliquam natus quod aut ut perferendis cupiditate officiis beatae porro magnam hic! Maxime consectetur sunt doloribus at autem excepturi architecto nostrum impedit ullam similique, corporis ipsum accusantium quam ratione consequatur soluta rem cupiditate quia laboriosam. Perferendis reiciendis sint beatae sequi aut exercitationem fuga quidem quas provident molestias amet enim eaque in totam nulla voluptas quaerat recusandae, sapiente neque odio delectus rem velit. Consequuntur ab placeat recusandae adipisci dicta vero quaerat velit magni sit? Ad quam rerum, cupiditate aspernatur tempora illo? Eos, molestias? Distinctio voluptates exercitationem beatae maiores asperiores? Qui at ex dolores cum officiis mollitia in quis molestias, placeat perferendis consequatur ab ratione blanditiis natus atque sint dolor vero! Nemo facere non doloribus doloremque distinctio nobis illo ullam, natus nesciunt quia corporis commodi illum repudiandae, est repellendus autem, totam aliquam neque. Nobis quasi sed at atque quaerat eaque optio. Doloribus sequi illum cumque, officiis, expedita dolorum ipsa laudantium voluptatum nobis voluptatem modi aliquam ratione nam sint nemo quia asperiores assumenda sapiente corporis earum! Atque laudantium, porro quia inventore eaque repudiandae velit magni repellat officia? Enim est iste repudiandae.</p>
+        <button  id='btn'  onclick="togglehide()">Show/hide</button>
+    </div>
+
+    <script>
+        let btn=document.getElementById('btn');
+        let container=document.getElementById('container');
+        let para=document.getElementById('para');
+         function togglehide(){if (para.style.display !='none'){
+                para.style.display='none';
+            } else {
+            para.style.display='block';
+            }
+         }
+
+         para.addEventListener('mouseover', function run(){   //mouseover means when mouse is over the para
+          para.style.color="red";
+         })
+         para.addEventListener('mouseout', function run(){     //mouseout means when mouse out of para
+          para.style.color="yellow"; 
+         })
+
+         //click means when we will click the event will get fire
+         //MOUSEDOWN will fire when we will hold any button on the mouse 
+         //MOUSEUP will fire when we will release the button on the mouse over function
+         
+    </script>
+</body>
+</html>

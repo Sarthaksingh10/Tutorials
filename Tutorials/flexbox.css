@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+.container{width: 100%;
+    border: 2px solid #ffffff;
+    display: flex;                   /* By default the direction of flex is row */
+   /*  flex-direction: row-reverse;  */    /*   row-reverse function will reverse the order of the element and will show mirror image */
+   /*  flex-direction: column;    */        /* This will make flex direction to column */
+    /*    flex-direction: column-reverse;   */    /*  element will get arrange in reverse order in vertical direction */
+  
+    /* flex-wrap: wrap; */         /* when we will make things responsive the flex element will wrap it self and go in the columns by default it will not wrap */
+       /* flex-flow: direction wrap;  */  /* shorthand property to write both directon and wrap */
+    margin: 2px 4px;
+    padding: 4px;
+    justify-content: center;        /*  Will align everything in center */
+    /*  justify-content: space-between;  */   /* will asssign space in between but not from start and end */
+    /* justify-content: space-evenly;   */   /* will assign space in between from the also from the START and END */
+    /* justify-content: space-around;  */    /*  will assign equal gap to all the all the element from it left and right side */
+}
+.item{
+    height: 100px;
+    width: 100px;
+    border: 2px dashed blue;
+    margin: 3px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+h2{
+    justify-content: center;
+}
+#item-1{
+    background-color: rgb(85, 201, 85);
+}
+#item-2{
+  background-color: rgb(160, 164, 31);
+}
+#item-3{
+    background-color: rgb(102, 102, 133);
+}
+#item-4{
+    background-color: rgb(168, 29, 105);
+}
+#item-5{
+    background-color: rgb(237, 151, 44);
+}
+#item-6{
+    background-color: rgb(225, 91, 46);
+}

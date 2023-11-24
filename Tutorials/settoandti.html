@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and setinterval</title>
+</head>
+<body>
+    Hello <span id="who"></span>
+    <p>The time is</p> <span id="time"></span>
+
+    <script>
+    /*      let who=document.getElementById("who");
+         function name(){
+            who.innerHTML=prompt("enter your name")
+            console.log(who)
+         }
+         setTimeout(name,2000) */
+
+        function greet(name,byetex){
+           let who=document.getElementById('who')        //here we are calling a id 
+            let greet='good morning'                     //giving value to the functions
+            name=prompt("what is your name");            //Inputing the name from user
+            who.innerHTML=name;                          //the input name will get inserted in the span id
+
+            byetext="goodbye";
+            console.log(greet +' ' + name + " "+byetext);  
+        };
+        setTimeout(greet,3000)      //settimeout prints a function once after a given interval of time
+           
+
+        function clock(){
+            time=new Date();
+            console.log("time");
+         document.getElementById("time").innerHTML=time;
+        }
+
+        
+
+        setInterval(clock,1000);     //this will repeat it after every second
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid property</title>
+    <style>
+.container{
+display: grid;
+/* grid-template-columns: 3fr 2fr 1fr; */    /* this will divide the whole page into 3 parts with 3:2:1 */
+grid-template-columns: repeat(4,2fr);   /* function if we want to repeat things we can give the repetition and their area */
+grid-template-rows: 1fr 2fr 3fr;
+grid-auto-rows: 2fr;
+}
+#item1{
+   /*  grid-column-start: 1;    This is about one item taking alarge space of 2 or more columns
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3; */
+grid-column: 1 / span 2;
+grid-row: 1 / span 2;
+}
+.items{
+    border: 2px solid yellow;
+    padding: 20px 4px;
+    text-align: center;
+    margin: 3px;
+ background-color: orange;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="items" id="item1">Item1</div>
+    <div class="items">Item2</div>
+    <div class="items">Item3</div>
+    <div class="items">Item4</div>
+    <div class="items">Item5</div>
+    <div class="items">Item6</div>
+    <div class="items">Item7</div>
+    <div class="items">Item8</div>
+    <div class="items">Item9</div>
+    <div class="items">Item10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .para::before{   /* this will place the content just before the place which selector is used */
+        content: " This is because of before selector";
+        font-size: 50px;
+        background-color: orange;
+    }
+    .para::after{   /* this will place the content just before the place which selector is used */
+        content: " this is because of after selector";
+        font-size: 50px;
+        background-color: green;
+    }
+</style>
+<body>
+    <h1>Before and after</h1>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est voluptate fugiat dolores suscipit distinctio quis, et, nesciunt consectetur ab quasi autem nemo obcaecati illum neque ipsum quam veniam voluptas quibusdam perferendis facere ipsam, sequi tenetur iusto. Unde, quisquam explicabo!</p>
+    </div>
+</body>
+</html>

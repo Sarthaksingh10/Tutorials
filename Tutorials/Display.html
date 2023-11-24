@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+</head>
+<style>
+/* This page is just for learning about the display property "block,inline,inline-block" 
+block-Takes the whole space;
+inline- aligns the content in a line;
+inline-block- have property of both block and inline takes only space that is required and also align in a single line */
+
+    body{
+        background-color: black;
+        color: white;
+    }
+    .contain{
+        border: 3px dashed yellow;
+        padding: 10px;
+        margin: auto;    /* shorthand is top right bottom left */
+        width: 30%;
+        margin-top: 5px;
+        display: inline-block; 
+        
+    }
+</style>
+<body>
+    <div id="container" class="contain">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iste eos sint quibusdam magnam nulla magni. 
+        Alias explicabo magnam officia beatae architecto? Aliquid fugit voluptatum exercitationem aspernatur, veritatis ullam consequuntur.
+    </div>
+    <div id="container2" class="contain">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi expedita ut
+         voluptatibus qui eius neque tenetur quibusdam quia quos maxime eveniet, adipisci repellat illo sunt autem, veniam ipsum tempora.
+    </div>
+    <div id="container3" class="contain">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores repellat veniam ab officia voluptatem 
+        repudiandae omnis, veritatis ipsum, possimus in reiciendis eligendi, explicabo velit nisi amet praesentium incidunt voluptate?
+    </div>
+</body>
+</html>
