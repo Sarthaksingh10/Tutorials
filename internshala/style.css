@@ -12,6 +12,21 @@ body{
     margin: auto;
     display: flex;
 }
+#pic1{
+    background:url(pic1.jpeg)  no-repeat center center/cover;
+}
+#pic2{
+    background:url(pic2.jpeg)  no-repeat center center/cover;
+}
+#pic3{
+    background:url(pic3.jpeg)  no-repeat center center/cover;
+}
+#pic4{
+    background:url(pic4.jpeg)  no-repeat center center/cover;
+}
+#pic5{
+    background:url(pic5.jpeg)  no-repeat center center/cover;
+}
 #kurti{
     color: #888787;
    height: 20px;
@@ -37,7 +52,7 @@ button{
     height: 500px;
     width: 350px;
    border-radius: 15px;
-   background:url(assignment.jpg)  no-repeat center center/cover;
+   background:url(pic1.jpeg)  no-repeat center center/cover;
    position: relative;
    top: 40px;
    right:90px;
@@ -88,6 +103,7 @@ button{
     flex-direction: row;
     position: relative;
     bottom: 20px;
+
 }
 #color-selector{
     display: flex;
@@ -120,7 +136,7 @@ button{
 }
 #color-btn{
     position: relative;
-    right: 70px;
+    right: 20%;
     top: 5px;
 }
 #select-size{

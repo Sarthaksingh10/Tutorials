@@ -12,11 +12,11 @@
       <div id="container">
          <span id="kurti">Home / Artform / Chikankari / Kurti</span>
           <div id="side-pictures">
-            <button id="pic1"><div class="switch-pictures">Pic1</div></button>
-            <button id="pic2"><div class="switch-pictures">Pic2</div></button>
-            <button id="pic3"><div class="switch-pictures">Pic3</div></button>
-            <button id="pic4"><div class="switch-pictures">Pic4</div></button>
-            <button id="pic5"><div class="switch-pictures">Pic5</div></button>
+            <button id="pic1" onclick="pic1replace()"><div class="switch-pictures"></div></button>
+            <button id="pic2" onclick="pic2replace()"><div class="switch-pictures"></div></button>
+            <button id="pic3" onclick="pic3replace()"><div class="switch-pictures"></div></button>
+            <button id="pic4" onclick="pic4replace()"><div class="switch-pictures"></div></button>
+            <button id="pic5" onclick="pic5replace()"><div class="switch-pictures"></div></button>
           </div>
           <div id="bigger-display"> 
           </div>
@@ -53,11 +53,11 @@
 <div id="select_size">
     <span id="size-selector"><h2>select size</h2>   <a href="#"><i class="fa fa-ruler"></i>select Guide</a> </span>
     <div id="size-btn">
-    <button class="size-of-kurti">32</button>
-    <button class="size-of-kurti">34</button>
-    <button class="size-of-kurti">36</button>
-    <button class="size-of-kurti">38</button>
-    <button class="size-of-kurti">40</button>
+    <button class="size-of-kurti" id="size32" onclick="size32shadow()">32</button>
+    <button class="size-of-kurti" id="size34" onclick="size34shadow()">34</button>
+    <button class="size-of-kurti" id="size36" onclick="size36shadow()">36</button>
+    <button class="size-of-kurti" id="size38" onclick="size38shadow()">38</button>
+    <button class="size-of-kurti" id="size40" onclick="size40shadow()">40</button>
     <button class="size-of-kurti" id="plus">+</button>
     </div>
 </div>
